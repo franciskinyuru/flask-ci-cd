@@ -7,4 +7,5 @@ app = Flask(__name__)
 def index():
     return "Flask CI/CD"
 
-app.run(debug=False)
+if __name__ == '__main__':
+    app.run()
